@@ -1,2 +1,20 @@
 <h1>Emiko</h1>
-<p>Find me in app/views/pages/x.html.erb</p>
+
+<p>Formulario de registro</p>
+
+<%= form_tag (pages_x_path) do %>
+	<%= label_tag 'nombre' %>
+	<br>
+	<%= text_field_tag 'nombre' %>
+	<br>
+	<%= label_tag 'email' %>
+	<br>
+	<%= text_field_tag 'email' %>
+	<br>
+	<%= label_tag 'edad' %>
+	<br>
+	<%= text_field_tag 'edad' %>
+	<br>
+	<%= submit_tag 'Enviar' %>
+
+<% end %>
