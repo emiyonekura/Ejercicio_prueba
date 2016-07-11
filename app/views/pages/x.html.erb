@@ -18,3 +18,17 @@
 	<%= submit_tag 'Enviar' %>
 
 <% end %>
+
+
+
+html { 
+  background: url('<%= asset_path "batman.jpeg" %>') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+<script type="text/javascript">
+  $.backstretch(url('<%= asset_path "batman.jpeg" %>'), {speed: 150});
+</script>

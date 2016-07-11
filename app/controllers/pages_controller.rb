@@ -6,4 +6,8 @@ class PagesController < ApplicationController
 
   	@usuario = Usuario.create(nombre: @nombre, email: @email, edad: @edad)
   end
+
+  def landing
+  	render layout: 'layout2'
+  end
 end
